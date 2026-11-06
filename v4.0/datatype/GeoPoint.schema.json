@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://takakura-makiko.github.io/smartcity-test/v4.0/datatype/GeoPoint.schema.json",
+  "title": "位置座標",
+  "description": "【サンプル】緯度・経度（世界測地系）を表すデータ型",
+  "type": "object",
+  "required": ["type", "latitude", "longitude"],
+  "properties": {
+    "type": { "const": "GeoPoint" },
+    "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
+    "longitude": { "type": "number", "minimum": -180, "maximum": 180 }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://takakura-makiko.github.io/smartcity-test/v4.0/datatype/Address.schema.json",
+  "title": "住所",
+  "description": "【サンプル】住所を表すデータ型",
+  "type": "object",
+  "required": ["type", "prefecture", "city"],
+  "properties": {
+    "type": { "const": "Address" },
+    "postalCode": { "type": "string", "pattern": "^[0-9]{3}-[0-9]{4}$", "description": "郵便番号（例：790-0001）" },
+    "prefecture": { "type": "string", "description": "都道府県名" },
+    "city": { "type": "string", "description": "市区町村名" },
+    "town": { "type": "string", "description": "町字" },
+    "blockNumber": { "type": "string", "description": "番地・号" }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://takakura-makiko.github.io/smartcity-test/v4.0/schema/Facility.schema.json",
+  "title": "施設",
+  "description": "【サンプル】公共施設のデータ構造",
+  "type": "object",
+  "required": ["@context", "id", "type", "facilityName", "facilityType", "address"],
+  "properties": {
+    "@context": { "const": "https://takakura-makiko.github.io/smartcity-test/v4.0/context/smartcity.jsonld" },
+    "id": { "type": "string", "format": "uri", "description": "施設の識別子（URI）" },
+    "type": { "const": "Facility" },
+    "facilityName": { "type": "string", "minLength": 1, "description": "施設名称" },
+    "facilityType": {
+      "type": "string",
+      "enum": ["01", "02", "03", "04"],
+      "description": "施設種別コード。コードの意味は https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType を参照"
+    },
+    "capacity": { "type": "integer", "minimum": 0, "description": "収容人数" },
+    "openingDate": { "type": "string", "format": "date", "description": "開設日（YYYY-MM-DD）" },
+    "address": { "$ref": "../datatype/Address.schema.json" },
+    "location": { "$ref": "../datatype/GeoPoint.schema.json" }
+  },
+  "additionalProperties": false
+}

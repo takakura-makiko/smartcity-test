@@ -1,0 +1,22 @@
+{
+  "@context": "https://takakura-makiko.github.io/smartcity-test/v4.0/context/smartcity.jsonld",
+  "id": "https://example.org/facility/0001",
+  "type": "Facility",
+  "facilityName": "サンプル市民センター",
+  "facilityType": "01",
+  "capacity": 120,
+  "openingDate": "2020-04-01",
+  "address": {
+    "type": "Address",
+    "postalCode": "000-0000",
+    "prefecture": "サンプル県",
+    "city": "サンプル市",
+    "town": "中央一丁目",
+    "blockNumber": "1番1号"
+  },
+  "location": {
+    "type": "GeoPoint",
+    "latitude": 33.8392,
+    "longitude": 132.7657
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    "scdm": "https://takakura-makiko.github.io/smartcity-test/v4.0/vocab#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+
+    "Facility": "scdm:Facility",
+    "Address": "scdm:Address",
+    "GeoPoint": "scdm:GeoPoint",
+
+    "facilityName": "scdm:facilityName",
+    "facilityType": "scdm:facilityType",
+    "capacity": { "@id": "scdm:capacity", "@type": "xsd:integer" },
+    "openingDate": { "@id": "scdm:openingDate", "@type": "xsd:date" },
+    "address": { "@id": "scdm:address" },
+    "location": { "@id": "scdm:location" },
+
+    "postalCode": "scdm:postalCode",
+    "prefecture": "scdm:prefecture",
+    "city": "scdm:city",
+    "town": "scdm:town",
+    "blockNumber": "scdm:blockNumber",
+
+    "latitude": { "@id": "scdm:latitude", "@type": "xsd:decimal" },
+    "longitude": { "@id": "scdm:longitude", "@type": "xsd:decimal" }
+  }
+}

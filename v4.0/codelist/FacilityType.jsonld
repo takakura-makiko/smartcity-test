@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "id": "@id",
+    "type": "@type",
+    "prefLabel": { "@id": "skos:prefLabel", "@language": "ja" },
+    "notation": "skos:notation",
+    "inScheme": { "@id": "skos:inScheme", "@type": "@id" },
+    "hasTopConcept": { "@id": "skos:hasTopConcept", "@type": "@id" }
+  },
+  "@graph": [
+    {
+      "id": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType",
+      "type": "skos:ConceptScheme",
+      "prefLabel": "施設種別（サンプル）",
+      "hasTopConcept": [
+        "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#01",
+        "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#02",
+        "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#03",
+        "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#04"
+      ]
+    },
+    { "id": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#01", "type": "skos:Concept", "notation": "01", "prefLabel": "公民館・集会施設", "inScheme": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType" },
+    { "id": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#02", "type": "skos:Concept", "notation": "02", "prefLabel": "図書館", "inScheme": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType" },
+    { "id": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#03", "type": "skos:Concept", "notation": "03", "prefLabel": "体育施設", "inScheme": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType" },
+    { "id": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType#04", "type": "skos:Concept", "notation": "04", "prefLabel": "指定避難所", "inScheme": "https://takakura-makiko.github.io/smartcity-test/v4.0/codelist/FacilityType" }
+  ]
+}
